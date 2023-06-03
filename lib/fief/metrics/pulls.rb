@@ -37,7 +37,6 @@ class Fief::Pulls
     json.each do |pr|
       num = pr[:number]
       data = @api.pull_request(@repo, num)
-      loog.debug(" #{json.count} open pull requests in #{@repo}")
       if data[:created_at] < Time.now - (60 * 60 * 24 * 14)
         loog.debug("PR #{@repo}/##{num} is old")
         old += 1

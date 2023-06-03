@@ -21,6 +21,7 @@ jobs:
       - run: |
           bin/fief --verbose --token ${{ secrets.TOKEN }} --to gh-pages \
             --include jcabi/* \
+            --exclude jcabi/.github \
             --include yegor256/cactoos \
             --include yegor256/takes \
             --include yegor256/xembly

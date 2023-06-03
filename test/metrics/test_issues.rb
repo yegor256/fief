@@ -18,47 +18,24 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# Issues in GitHub repo.
+require 'minitest/autorun'
+require 'octokit'
+require 'loog'
+require_relative '../../lib/fief/metrics/issues'
+
+# Test for Issues.
 # Author:: Yegor Bugayenko (yegor256@gmail.com)
 # Copyright:: Copyright (c) 2023 Yegor Bugayenko
 # License:: MIT
-class Fief::Issues
-  def initialize(api, repo, opts)
-    @api = api
-    @repo = repo
-    @opts = opts
-  end
-
-  def take(loog)
-    json = @api.list_issues(@repo, state: 'open')
-    loog.debug("Found #{json.count} open issues in #{@repo}")
-    old = 0
-    older = 0
-    json.each do |issue|
-      num = issue[:number]
-      data = @api.issue(@repo, num)
-      if data[:created_at] < Time.now - (60 * 60 * 24 * 14)
-        loog.debug("Issue #{@repo}/##{num} is old")
-        old += 1
-      end
-      if data[:created_at] < Time.now - (60 * 60 * 24 * 56)
-        loog.debug("Issue #{@repo}/##{num} is very old")
-        older += 1
-      end
-    end
-    [
-      {
-        title: 'Open Issues',
-        value: json.count
-      },
-      {
-        title: 'Old Issues',
-        value: old
-      },
-      {
-        title: 'Older Issues',
-        value: older
-      }
-    ]
+class TestIssues < Minitest::Test
+  def test_real
+    api = Octokit::Client.new
+    m = Fief::Issues.new(api, 'yegor256/fief', {})
+    ms = m.take(Loog::VERBOSE)
+    assert !ms.empty?
+    p ms
+  rescue Octokit::TooManyRequests => e
+    puts e.message
+    skip
   end
 end
