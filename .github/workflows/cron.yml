@@ -3,9 +3,6 @@ name: cron
 on:
   schedule:
     - cron: "23 23 * * *"
-  push:
-    branches:
-      - master
 concurrency:
   group: cron
   cancel-in-progress: true
@@ -22,9 +19,12 @@ jobs:
           bin/fief --verbose --token ${{ secrets.TOKEN }} --to gh-pages \
             --include jcabi/* \
             --exclude jcabi/.github \
-            --include yegor256/cactoos \
-            --include yegor256/takes \
-            --include yegor256/xembly
+            --include yegor256/* \
+            --include sttc/* \
+            --include objectionary/* \
+            --include polystat/* \
+            --include zerocracy/* \
+            --include zold-io/*
       - run: mkdir -p gh-pages/$(date +'%Y/%m/%d')
       - run: cp gh-pages/index.xml gh-pages/$(date +'%Y/%m/%d')/index.xml
       - uses: JamesIves/github-pages-deploy-action@v4.4.2
