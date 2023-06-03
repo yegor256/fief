@@ -2,7 +2,7 @@
 name: cron
 on:
   schedule:
-    - cron: "23 23 * * *"
+    - cron: "13 13 * * *"
 concurrency:
   group: cron
   cancel-in-progress: true
