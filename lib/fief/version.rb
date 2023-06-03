@@ -23,5 +23,5 @@
 # Copyright:: Copyright (c) 2023 Yegor Bugayenko
 # License:: MIT
 module Fief
-  VERSION = '0.0.0'.freeze
+  VERSION = '0.0.2'.freeze
 end
