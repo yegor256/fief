@@ -189,6 +189,11 @@ SOFTWARE.
       <xsl:attribute name="data-sort-value">
         <xsl:copy-of select="."/>
       </xsl:attribute>
+      <xsl:if test="@alert">
+        <xsl:attribute name="class">
+          <xsl:text>firebrick</xsl:text>
+        </xsl:attribute>
+      </xsl:if>
       <xsl:copy-of select="."/>
     </td>
   </xsl:template>

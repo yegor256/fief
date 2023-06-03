@@ -31,7 +31,8 @@ class Fief::Pulls
 
   def take(loog)
     json = @api.pull_requests(@repo, state: 'open')
-    loog.debug("Found #{json.count} open pull requests in #{@repo}")
+    total = json.count
+    loog.debug("Found #{total} open pull requests in #{@repo}")
     old = 0
     older = 0
     json.each do |pr|
@@ -49,15 +50,18 @@ class Fief::Pulls
     [
       {
         title: 'Open PRs',
-        value: json.count
+        value: total,
+        alert: false
       },
       {
         title: 'Old PRs',
-        value: old
+        value: old,
+        alert: older > total * 0.4
       },
       {
         title: 'Older PRs',
-        value: older
+        value: older,
+        alert: older > total * 0.2
       }
     ]
   end

@@ -31,7 +31,8 @@ class Fief::Issues
 
   def take(loog)
     json = @api.list_issues(@repo, state: 'open')
-    loog.debug("Found #{json.count} open issues in #{@repo}")
+    total = json.count
+    loog.debug("Found #{total} open issues in #{@repo}")
     old = 0
     older = 0
     json.each do |issue|
@@ -49,15 +50,18 @@ class Fief::Issues
     [
       {
         title: 'Open Issues',
-        value: json.count
+        value: total,
+        alert: false
       },
       {
         title: 'Old Issues',
-        value: old
+        value: old,
+        alert: older > total * 0.4
       },
       {
         title: 'Older Issues',
-        value: older
+        value: older,
+        alert: older > total * 0.4
       }
     ]
   end

@@ -125,6 +125,7 @@ def build_xml(opts, loog)
             xml.metrics do
               r[:metrics].each do |ms|
                 xml.m(id: ms[:title]) do
+                  xml.parent.set_attribute('alert', 'yes') if ms[:alert]
                   xml.text ms[:value]
                 end
               end
