@@ -1,0 +1,32 @@
+---
+name: cron
+on:
+  schedule:
+    - cron: "23 23 * * *"
+  push:
+    branches:
+      - master
+concurrency:
+  group: cron
+  cancel-in-progress: true
+jobs:
+  cron:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      - run: |
+          bin/fief --verbose --token ${{ secrets.TOKEN }} --to gh-pages \
+            --include jcabi/* \
+            --include yegor256/cactoos \
+            --include yegor256/takes \
+            --include yegor256/xembly
+      - run: mkdir -p gh-pages/$(date +'%Y/%m/%d')
+      - run: cp gh-pages/index.xml gh-pages/$(date +'%Y/%m/%d')/index.xml
+      - uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: gh-pages
+          clean: false
