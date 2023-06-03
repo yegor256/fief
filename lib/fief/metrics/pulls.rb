@@ -32,10 +32,33 @@ class Fief::Pulls
   def take(loog)
     json = @api.pull_requests(@repo, state: 'open')
     loog.debug("Found #{json.count} open pull requests in #{@repo}")
+    old = 0
+    older = 0
+    json.each do |pr|
+      num = pr[:number]
+      data = @api.pull_request(@repo, num)
+      loog.debug(" #{json.count} open pull requests in #{@repo}")
+      if data[:created_at] < Time.now - (60 * 60 * 24 * 14)
+        loog.debug("PR #{@repo}/##{num} is old")
+        old += 1
+      end
+      if data[:created_at] < Time.now - (60 * 60 * 24 * 56)
+        loog.debug("PR #{@repo}/##{num} is very old")
+        older += 1
+      end
+    end
     [
       {
-        title: 'Open Pull Requests',
+        title: 'Open PRs',
         value: json.count
+      },
+      {
+        title: 'Old PRs',
+        value: old
+      },
+      {
+        title: 'Older PRs',
+        value: older
       }
     ]
   end

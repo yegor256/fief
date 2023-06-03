@@ -98,7 +98,7 @@ SOFTWARE.
                 <xsl:text>,1]]</xsl:text>
               </xsl:attribute>
               <colgroup>
-                <col style="width: 2.5em;"/>
+                <col/>
                 <xsl:for-each select="fief/titles/title">
                   <xsl:sort select="."/>
                   <col/>

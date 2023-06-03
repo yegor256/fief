@@ -9,7 +9,6 @@
 [![Gem Version](https://badge.fury.io/rb/fief.svg)](http://badge.fury.io/rb/fief)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/fief/blob/master/LICENSE.txt)
 [![Maintainability](https://api.codeclimate.com/v1/badges/396ec0584e0a84adc723/maintainability)](https://codeclimate.com/github/yegor256/fief/maintainability)
-[![Test Coverage](https://img.shields.io/codecov/c/github/yegor256/fief.svg)](https://codecov.io/github/yegor256/fief?branch=master)
 ![Lines of code](https://img.shields.io/tokei/lines/github/yegor256/fief)
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/fief)](https://hitsofcode.com/view/github/yegor256/fief)
 
@@ -25,6 +24,8 @@ Then, run it locally and read its output:
 ```bash
 $ fief --repo yegor256/fief --verbose
 ```
+
+For example, [here is mine](https://yegor256.github.io/fief/).
 
 ## How to contribute
 

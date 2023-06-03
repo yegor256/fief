@@ -31,7 +31,7 @@ class TestPulls < Minitest::Test
   def test_real
     api = Octokit::Client.new
     m = Fief::Pulls.new(api, 'yegor256/fief', {})
-    ms = m.take(Loog::NULL)
+    ms = m.take(Loog::VERBOSE)
     assert !ms.empty?
     p ms
   rescue Octokit::TooManyRequests => e
