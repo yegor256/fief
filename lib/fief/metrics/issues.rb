@@ -31,6 +31,7 @@ class Fief::Issues
 
   def take(loog)
     json = @api.list_issues(@repo, state: 'open')
+    json.select! { |i| i[:pull_request].nil? }
     total = json.count
     loog.debug("Found #{total} open issues in #{@repo}")
     old = 0
