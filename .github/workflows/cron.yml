@@ -17,6 +17,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7
+      - run: bundle install
       - run: |
           bin/fief --verbose --token ${{ secrets.TOKEN }} --to gh-pages \
             --include jcabi/* \
