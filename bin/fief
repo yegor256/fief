@@ -104,7 +104,10 @@ def build_xml(opts, loog)
       else
         measures = m.take(loog)
       end
-      data << {name: repo, metrics: measures}
+      if data.find { |d| d[:name] == repo }.nil?
+        data << {name: repo, metrics: []}
+      end
+      data.find { |d| d[:name] == repo }[:metrics] += measures
     end
   end
   builder = Nokogiri::XML::Builder.new(:encoding => 'UTF-8') do |xml|
