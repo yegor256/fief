@@ -1,348 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fief time="2023-06-03 07:04:31 +0000">
+<fief time="2023-06-03 07:33:48 +0000">
   <titles>
     <title>Open Issues</title>
-    <title>Open Pull Requests</title>
+    <title>Open PRs</title>
+    <title>Old PRs</title>
+    <title>Older PRs</title>
   </titles>
   <repositories>
     <repository id="jcabi/jcabi">
       <metrics>
         <m id="Open Issues">7</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi">
-      <metrics>
-        <m id="Open Pull Requests">0</m>
+        <m id="Open PRs">0</m>
+        <m id="Old PRs">0</m>
+        <m id="Older PRs">0</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-log">
       <metrics>
         <m id="Open Issues">20</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-log">
-      <metrics>
-        <m id="Open Pull Requests">5</m>
+        <m id="Open PRs">5</m>
+        <m id="Old PRs">5</m>
+        <m id="Older PRs">5</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-manifests">
       <metrics>
         <m id="Open Issues">15</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-manifests">
-      <metrics>
-        <m id="Open Pull Requests">2</m>
+        <m id="Open PRs">2</m>
+        <m id="Old PRs">2</m>
+        <m id="Older PRs">1</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-jdbc">
       <metrics>
         <m id="Open Issues">12</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-jdbc">
-      <metrics>
-        <m id="Open Pull Requests">4</m>
+        <m id="Open PRs">4</m>
+        <m id="Old PRs">3</m>
+        <m id="Older PRs">3</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-aether">
       <metrics>
         <m id="Open Issues">43</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-aether">
-      <metrics>
-        <m id="Open Pull Requests">24</m>
+        <m id="Open PRs">24</m>
+        <m id="Old PRs">24</m>
+        <m id="Older PRs">22</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-urn">
       <metrics>
         <m id="Open Issues">4</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-urn">
-      <metrics>
-        <m id="Open Pull Requests">3</m>
+        <m id="Open PRs">3</m>
+        <m id="Old PRs">3</m>
+        <m id="Older PRs">3</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-dynamo">
       <metrics>
         <m id="Open Issues">12</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-dynamo">
-      <metrics>
-        <m id="Open Pull Requests">2</m>
+        <m id="Open PRs">2</m>
+        <m id="Old PRs">2</m>
+        <m id="Older PRs">2</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-aspects">
       <metrics>
         <m id="Open Issues">54</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-aspects">
-      <metrics>
-        <m id="Open Pull Requests">4</m>
+        <m id="Open PRs">4</m>
+        <m id="Old PRs">4</m>
+        <m id="Older PRs">4</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-velocity">
       <metrics>
         <m id="Open Issues">3</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-velocity">
-      <metrics>
-        <m id="Open Pull Requests">2</m>
+        <m id="Open PRs">2</m>
+        <m id="Old PRs">2</m>
+        <m id="Older PRs">2</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-parent">
       <metrics>
         <m id="Open Issues">7</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-parent">
-      <metrics>
-        <m id="Open Pull Requests">2</m>
+        <m id="Open PRs">2</m>
+        <m id="Old PRs">1</m>
+        <m id="Older PRs">0</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-maven-plugin">
       <metrics>
         <m id="Open Issues">13</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-maven-plugin">
-      <metrics>
-        <m id="Open Pull Requests">8</m>
+        <m id="Open PRs">8</m>
+        <m id="Old PRs">8</m>
+        <m id="Older PRs">7</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-maven-slf4j">
       <metrics>
         <m id="Open Issues">4</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-maven-slf4j">
-      <metrics>
-        <m id="Open Pull Requests">2</m>
+        <m id="Open PRs">2</m>
+        <m id="Old PRs">2</m>
+        <m id="Older PRs">2</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-maven-skin">
       <metrics>
         <m id="Open Issues">12</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-maven-skin">
-      <metrics>
-        <m id="Open Pull Requests">8</m>
+        <m id="Open PRs">8</m>
+        <m id="Old PRs">8</m>
+        <m id="Older PRs">8</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-ssl-maven-plugin">
       <metrics>
         <m id="Open Issues">11</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-ssl-maven-plugin">
-      <metrics>
-        <m id="Open Pull Requests">10</m>
+        <m id="Open PRs">10</m>
+        <m id="Old PRs">10</m>
+        <m id="Older PRs">10</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-beanstalk-maven-plugin">
       <metrics>
         <m id="Open Issues">19</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-beanstalk-maven-plugin">
-      <metrics>
-        <m id="Open Pull Requests">10</m>
+        <m id="Open PRs">10</m>
+        <m id="Old PRs">10</m>
+        <m id="Older PRs">10</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-heroku-maven-plugin">
       <metrics>
         <m id="Open Issues">6</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-heroku-maven-plugin">
-      <metrics>
-        <m id="Open Pull Requests">4</m>
+        <m id="Open PRs">4</m>
+        <m id="Old PRs">4</m>
+        <m id="Older PRs">4</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-dynamodb-maven-plugin">
       <metrics>
         <m id="Open Issues">14</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-dynamodb-maven-plugin">
-      <metrics>
-        <m id="Open Pull Requests">5</m>
+        <m id="Open PRs">5</m>
+        <m id="Old PRs">3</m>
+        <m id="Older PRs">3</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-mysql-maven-plugin">
       <metrics>
         <m id="Open Issues">51</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-mysql-maven-plugin">
-      <metrics>
-        <m id="Open Pull Requests">27</m>
+        <m id="Open PRs">27</m>
+        <m id="Old PRs">27</m>
+        <m id="Older PRs">27</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-simpledb">
       <metrics>
         <m id="Open Issues">4</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-simpledb">
-      <metrics>
-        <m id="Open Pull Requests">3</m>
+        <m id="Open PRs">3</m>
+        <m id="Old PRs">2</m>
+        <m id="Older PRs">2</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-xml">
       <metrics>
         <m id="Open Issues">15</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-xml">
-      <metrics>
-        <m id="Open Pull Requests">0</m>
+        <m id="Open PRs">0</m>
+        <m id="Old PRs">0</m>
+        <m id="Older PRs">0</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-s3">
       <metrics>
         <m id="Open Issues">6</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-s3">
-      <metrics>
-        <m id="Open Pull Requests">3</m>
+        <m id="Open PRs">3</m>
+        <m id="Old PRs">2</m>
+        <m id="Older PRs">2</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-github">
       <metrics>
         <m id="Open Issues">126</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-github">
-      <metrics>
-        <m id="Open Pull Requests">9</m>
+        <m id="Open PRs">9</m>
+        <m id="Old PRs">8</m>
+        <m id="Older PRs">8</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-odesk">
       <metrics>
         <m id="Open Issues">7</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-odesk">
-      <metrics>
-        <m id="Open Pull Requests">4</m>
+        <m id="Open PRs">4</m>
+        <m id="Old PRs">4</m>
+        <m id="Older PRs">4</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-http">
       <metrics>
         <m id="Open Issues">37</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-http">
-      <metrics>
-        <m id="Open Pull Requests">10</m>
+        <m id="Open PRs">10</m>
+        <m id="Old PRs">10</m>
+        <m id="Older PRs">10</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-immutable">
       <metrics>
         <m id="Open Issues">7</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-immutable">
-      <metrics>
-        <m id="Open Pull Requests">2</m>
+        <m id="Open PRs">2</m>
+        <m id="Old PRs">2</m>
+        <m id="Older PRs">1</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-matchers">
       <metrics>
         <m id="Open Issues">14</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-matchers">
-      <metrics>
-        <m id="Open Pull Requests">10</m>
+        <m id="Open PRs">10</m>
+        <m id="Old PRs">10</m>
+        <m id="Older PRs">8</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-w3c">
       <metrics>
         <m id="Open Issues">6</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-w3c">
-      <metrics>
-        <m id="Open Pull Requests">3</m>
+        <m id="Open PRs">3</m>
+        <m id="Old PRs">3</m>
+        <m id="Older PRs">3</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-latex-maven-plugin">
       <metrics>
         <m id="Open Issues">5</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-latex-maven-plugin">
-      <metrics>
-        <m id="Open Pull Requests">4</m>
+        <m id="Open PRs">4</m>
+        <m id="Old PRs">4</m>
+        <m id="Older PRs">4</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-ssh">
       <metrics>
         <m id="Open Issues">32</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-ssh">
-      <metrics>
-        <m id="Open Pull Requests">5</m>
+        <m id="Open PRs">5</m>
+        <m id="Old PRs">4</m>
+        <m id="Older PRs">2</m>
       </metrics>
     </repository>
     <repository id="jcabi/jcabi-email">
       <metrics>
         <m id="Open Issues">4</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/jcabi-email">
-      <metrics>
-        <m id="Open Pull Requests">2</m>
+        <m id="Open PRs">2</m>
+        <m id="Old PRs">2</m>
+        <m id="Older PRs">2</m>
       </metrics>
     </repository>
     <repository id="jcabi/.github">
       <metrics>
         <m id="Open Issues">0</m>
-      </metrics>
-    </repository>
-    <repository id="jcabi/.github">
-      <metrics>
-        <m id="Open Pull Requests">0</m>
+        <m id="Open PRs">0</m>
+        <m id="Old PRs">0</m>
+        <m id="Older PRs">0</m>
       </metrics>
     </repository>
     <repository id="yegor256/cactoos">
       <metrics>
         <m id="Open Issues">69</m>
-      </metrics>
-    </repository>
-    <repository id="yegor256/cactoos">
-      <metrics>
-        <m id="Open Pull Requests">5</m>
+        <m id="Open PRs">5</m>
+        <m id="Old PRs">4</m>
+        <m id="Older PRs">4</m>
       </metrics>
     </repository>
     <repository id="yegor256/takes">
       <metrics>
         <m id="Open Issues">78</m>
-      </metrics>
-    </repository>
-    <repository id="yegor256/takes">
-      <metrics>
-        <m id="Open Pull Requests">10</m>
+        <m id="Open PRs">10</m>
+        <m id="Old PRs">8</m>
+        <m id="Older PRs">7</m>
       </metrics>
     </repository>
     <repository id="yegor256/xembly">
       <metrics>
         <m id="Open Issues">14</m>
-      </metrics>
-    </repository>
-    <repository id="yegor256/xembly">
-      <metrics>
-        <m id="Open Pull Requests">7</m>
+        <m id="Open PRs">7</m>
+        <m id="Old PRs">3</m>
+        <m id="Older PRs">0</m>
       </metrics>
     </repository>
   </repositories>
