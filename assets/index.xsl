@@ -185,15 +185,16 @@ SOFTWARE.
     </tr>
   </xsl:template>
   <xsl:template match="m">
-    <td class="num">
+    <td>
+      <xsl:attribute name="class">
+        <xsl:text>num</xsl:text>
+        <xsl:if test="@alert">
+          <xsl:text> firebrick</xsl:text>
+        </xsl:if>
+      </xsl:attribute>
       <xsl:attribute name="data-sort-value">
         <xsl:copy-of select="."/>
       </xsl:attribute>
-      <xsl:if test="@alert">
-        <xsl:attribute name="class">
-          <xsl:text>firebrick</xsl:text>
-        </xsl:attribute>
-      </xsl:if>
       <xsl:copy-of select="."/>
     </td>
   </xsl:template>

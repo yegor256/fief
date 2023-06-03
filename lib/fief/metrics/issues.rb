@@ -38,11 +38,11 @@ class Fief::Issues
     json.each do |issue|
       num = issue[:number]
       data = @api.issue(@repo, num)
-      if data[:created_at] < Time.now - (60 * 60 * 24 * 14)
+      if data[:created_at] < Time.now - (60 * 60 * 24 * 28)
         loog.debug("Issue #{@repo}/##{num} is old")
         old += 1
       end
-      if data[:created_at] < Time.now - (60 * 60 * 24 * 56)
+      if data[:created_at] < Time.now - (60 * 60 * 24 * 112)
         loog.debug("Issue #{@repo}/##{num} is very old")
         older += 1
       end
