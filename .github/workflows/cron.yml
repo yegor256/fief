@@ -16,7 +16,7 @@ jobs:
           ruby-version: 2.7
       - run: bundle install
       - run: |
-          bin/fief --verbose --token ${{ secrets.TOKEN }} --to gh-pages --delay 700 \
+          bin/fief --verbose --token ${{ secrets.TOKEN }} --to gh-pages --delay 1000 \
             --include jcabi/* \
             --exclude jcabi/.github \
             --include yegor256/* \
