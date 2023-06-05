@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fief time="2023-06-05 10:02:02 +0000" sec="6226.981618175">
+<fief time="2023-06-05 14:03:16 +0000" sec="6196.326926758">
   <titles>
     <title>CI failures</title>
     <title>Open Issues</title>
@@ -1035,7 +1035,7 @@
     </repository>
     <repository id="yegor256/painofoop">
       <metrics>
-        <m id="CI failures">0</m>
+        <m id="CI failures" alert="yes">1</m>
         <m id="Open Issues">1</m>
         <m id="Old Issues">1</m>
         <m id="Older Issues">0</m>
@@ -1666,18 +1666,18 @@
         <m id="Open Issues">2</m>
         <m id="Old Issues" alert="yes">1</m>
         <m id="Older Issues" alert="yes">1</m>
-        <m id="Open PRs">2</m>
+        <m id="Open PRs">3</m>
         <m id="Old PRs">1</m>
         <m id="Older PRs">0</m>
       </metrics>
     </repository>
     <repository id="objectionary/eo">
       <metrics>
-        <m id="CI failures" alert="yes">1</m>
+        <m id="CI failures" alert="yes">2</m>
         <m id="Open Issues">55</m>
         <m id="Old Issues" alert="yes">41</m>
         <m id="Older Issues" alert="yes">31</m>
-        <m id="Open PRs">16</m>
+        <m id="Open PRs">17</m>
         <m id="Old PRs" alert="yes">13</m>
         <m id="Older PRs" alert="yes">9</m>
       </metrics>
@@ -1893,13 +1893,13 @@
     </repository>
     <repository id="objectionary/eo-net">
       <metrics>
-        <m id="CI failures" alert="yes">2</m>
+        <m id="CI failures" alert="yes">1</m>
         <m id="Open Issues">3</m>
         <m id="Old Issues" alert="yes">2</m>
         <m id="Older Issues" alert="yes">2</m>
-        <m id="Open PRs">6</m>
-        <m id="Old PRs" alert="yes">4</m>
-        <m id="Older PRs" alert="yes">4</m>
+        <m id="Open PRs">3</m>
+        <m id="Old PRs" alert="yes">2</m>
+        <m id="Older PRs" alert="yes">2</m>
       </metrics>
     </repository>
     <repository id="objectionary/eo-time">
