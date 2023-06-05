@@ -26,7 +26,9 @@ jobs:
             --include zold-io/* \
             --exclude jcabi/.github \
             --exclude yegor256/quiz \
-            --excluce yegor256/hangman \
+            --exclude yegor256/hangman \
+            --exclude objectionary/.github \
+            --exclude polystat/.github \
             --to gh-pages
       - run: mkdir -p gh-pages/$(date +'%Y/%m/%d')
       - run: cp gh-pages/index.xml gh-pages/$(date +'%Y/%m/%d')/index.xml
