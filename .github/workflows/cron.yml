@@ -16,15 +16,18 @@ jobs:
           ruby-version: 2.7
       - run: bundle install
       - run: |
-          bin/fief --token ${{ secrets.TOKEN }} --to gh-pages --delay 1000 \
+          bin/fief --token ${{ secrets.TOKEN }} --delay 1000 \
             --include jcabi/* \
-            --exclude jcabi/.github \
             --include yegor256/* \
             --include sttc/* \
             --include objectionary/* \
             --include polystat/* \
             --include zerocracy/* \
-            --include zold-io/*
+            --include zold-io/* \
+            --exclude jcabi/.github \
+            --exclude yegor256/quiz \
+            --excluce yegor256/hangman \
+            --to gh-pages
       - run: mkdir -p gh-pages/$(date +'%Y/%m/%d')
       - run: cp gh-pages/index.xml gh-pages/$(date +'%Y/%m/%d')/index.xml
       - uses: JamesIves/github-pages-deploy-action@v4.4.2

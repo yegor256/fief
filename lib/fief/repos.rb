@@ -40,6 +40,10 @@ class Fief::Repos
           @loog.debug("GitHub account @#{org} is a user's account")
           @api.repositories(org, { type: 'public' }).each do |json|
             id = json[:full_name]
+            if json[:archived]
+              @loog.debug("The #{id} repo is archived, ignoring it")
+              next
+            end
             repos << id
             @loog.debug("Including #{id} as it is owned by @#{org}")
           end
@@ -47,6 +51,10 @@ class Fief::Repos
           @loog.debug("GitHub account @#{org} is an organization account")
           @api.organization_repositories(org, { type: 'public' }).each do |json|
             id = json[:full_name]
+            if json[:archived]
+              @loog.debug("The #{id} repo is archived, ignoring it")
+              next
+            end
             repos << id
             @loog.debug("Including #{id} as a member of @#{org} organization")
           end
