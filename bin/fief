@@ -109,6 +109,7 @@ def build_xml(opts, loog)
         data << {name: repo, metrics: []}
       end
       data.find { |d| d[:name] == repo }[:metrics] += measures
+      loog.info("Read from '#{name}': #{measures.map { |m| "#{m[:title]}=#{m[:value]}" }.join(', ')}")
     end
   end
   builder = Nokogiri::XML::Builder.new(:encoding => 'UTF-8') do |xml|

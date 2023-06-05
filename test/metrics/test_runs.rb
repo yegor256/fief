@@ -33,7 +33,6 @@ class TestRuns < Minitest::Test
     m = Fief::Runs.new(api, 'yegor256/debate', {})
     ms = m.take(Loog::VERBOSE)
     assert !ms.empty?
-    p ms
   rescue Octokit::TooManyRequests => e
     puts e.message
     skip

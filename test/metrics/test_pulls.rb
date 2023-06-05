@@ -33,7 +33,6 @@ class TestPulls < Minitest::Test
     m = Fief::Pulls.new(api, 'yegor256/fief', {})
     ms = m.take(Loog::VERBOSE)
     assert !ms.empty?
-    p ms
   rescue Octokit::TooManyRequests => e
     puts e.message
     skip
