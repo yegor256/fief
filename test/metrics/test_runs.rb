@@ -30,7 +30,7 @@ require_relative '../../lib/fief/metrics/runs'
 class TestRuns < Minitest::Test
   def test_real
     api = Octokit::Client.new
-    m = Fief::Runs.new(api, 'yegor256/fief', {})
+    m = Fief::Runs.new(api, 'yegor256/debate', {})
     ms = m.take(Loog::VERBOSE)
     assert !ms.empty?
     p ms

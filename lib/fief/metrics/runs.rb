@@ -38,9 +38,10 @@ class Fief::Runs
       workflow = run[:workflow_id]
       next if workflows.include?(workflow)
       workflows << workflow
-      status = run[:status]
-      loog.debug("Workflow run '#{run[:name]}' in #{@repo} is in status '#{status}'")
-      if status == 'failure'
+      next if run[:status] != 'completed'
+      conclusion = run[:conclusion]
+      loog.debug("Workflow run '#{run[:name]}' in #{@repo} is '#{conclusion}'")
+      if conclusion == 'failure'
         loog.debug("Workflow run '#{run[:name]}' is failed")
         failures += 1
       end
