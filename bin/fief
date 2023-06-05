@@ -113,7 +113,7 @@ def build_xml(opts, loog)
     end
   end
   builder = Nokogiri::XML::Builder.new(:encoding => 'UTF-8') do |xml|
-    xml.fief(time: Time.now, msec: Time.now - start) do
+    xml.fief(time: Time.now, sec: Time.now - start) do
       xml.titles do
         data.map { |r| r[:metrics].map { |ms| ms[:title] } }.flatten.uniq.each do |t|
           xml.title do

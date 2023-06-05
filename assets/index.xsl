@@ -143,7 +143,7 @@ SOFTWARE.
               <xsl:text>. </xsl:text>
               <br/>
               <xsl:text>It took </xsl:text>
-              <xsl:variable name="sec" select="round(fief/@msec) div 1000"/>
+              <xsl:variable name="sec" select="round(fief/@msec)"/>
               <xsl:choose>
                 <xsl:when test="$sec &lt; 60">
                   <xsl:value-of select="$sec"/>
