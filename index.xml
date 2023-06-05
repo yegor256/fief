@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fief time="2023-06-05 05:52:07 +0000" msec="5654.411084728">
+<fief time="2023-06-05 10:02:02 +0000" sec="6226.981618175">
   <titles>
     <title>CI failures</title>
     <title>Open Issues</title>
@@ -472,17 +472,6 @@
         <m id="Older PRs" alert="yes">3</m>
       </metrics>
     </repository>
-    <repository id="yegor256/carts">
-      <metrics>
-        <m id="CI failures">0</m>
-        <m id="Open Issues">2</m>
-        <m id="Old Issues" alert="yes">2</m>
-        <m id="Older Issues" alert="yes">2</m>
-        <m id="Open PRs">1</m>
-        <m id="Old PRs" alert="yes">1</m>
-        <m id="Older PRs" alert="yes">1</m>
-      </metrics>
-    </repository>
     <repository id="yegor256/clicks">
       <metrics>
         <m id="CI failures">0</m>
@@ -569,28 +558,6 @@
         <m id="Open PRs">0</m>
         <m id="Old PRs">0</m>
         <m id="Older PRs">0</m>
-      </metrics>
-    </repository>
-    <repository id="yegor256/ctors-vs-size">
-      <metrics>
-        <m id="CI failures">0</m>
-        <m id="Open Issues">0</m>
-        <m id="Old Issues">0</m>
-        <m id="Older Issues">0</m>
-        <m id="Open PRs">1</m>
-        <m id="Old PRs" alert="yes">1</m>
-        <m id="Older PRs" alert="yes">1</m>
-      </metrics>
-    </repository>
-    <repository id="yegor256/dd">
-      <metrics>
-        <m id="CI failures">0</m>
-        <m id="Open Issues">1</m>
-        <m id="Old Issues" alert="yes">1</m>
-        <m id="Older Issues" alert="yes">1</m>
-        <m id="Open PRs">1</m>
-        <m id="Old PRs" alert="yes">1</m>
-        <m id="Older PRs" alert="yes">1</m>
       </metrics>
     </repository>
     <repository id="yegor256/debate">
@@ -978,17 +945,6 @@
         <m id="Older PRs">0</m>
       </metrics>
     </repository>
-    <repository id="yegor256/lenot">
-      <metrics>
-        <m id="CI failures">0</m>
-        <m id="Open Issues">1</m>
-        <m id="Old Issues" alert="yes">1</m>
-        <m id="Older Issues" alert="yes">1</m>
-        <m id="Open PRs">0</m>
-        <m id="Old PRs">0</m>
-        <m id="Older PRs">0</m>
-      </metrics>
-    </repository>
     <repository id="yegor256/llvm-playground">
       <metrics>
         <m id="CI failures">0</m>
@@ -1231,17 +1187,6 @@
         <m id="Older PRs" alert="yes">5</m>
       </metrics>
     </repository>
-    <repository id="yegor256/rubygems-scrape">
-      <metrics>
-        <m id="CI failures">0</m>
-        <m id="Open Issues">0</m>
-        <m id="Old Issues">0</m>
-        <m id="Older Issues">0</m>
-        <m id="Open PRs">0</m>
-        <m id="Old PRs">0</m>
-        <m id="Older PRs">0</m>
-      </metrics>
-    </repository>
     <repository id="yegor256/rultor">
       <metrics>
         <m id="CI failures">0</m>
@@ -1295,17 +1240,6 @@
         <m id="Open PRs">4</m>
         <m id="Old PRs" alert="yes">4</m>
         <m id="Older PRs" alert="yes">4</m>
-      </metrics>
-    </repository>
-    <repository id="yegor256/scrape-maven-central">
-      <metrics>
-        <m id="CI failures">0</m>
-        <m id="Open Issues">0</m>
-        <m id="Old Issues">0</m>
-        <m id="Older Issues">0</m>
-        <m id="Open PRs">1</m>
-        <m id="Old PRs" alert="yes">1</m>
-        <m id="Older PRs" alert="yes">1</m>
       </metrics>
     </repository>
     <repository id="yegor256/seedramp">
@@ -1440,17 +1374,6 @@
         <m id="Older PRs">0</m>
       </metrics>
     </repository>
-    <repository id="yegor256/techiends">
-      <metrics>
-        <m id="CI failures">0</m>
-        <m id="Open Issues">1</m>
-        <m id="Old Issues" alert="yes">1</m>
-        <m id="Older Issues" alert="yes">1</m>
-        <m id="Open PRs">0</m>
-        <m id="Old PRs">0</m>
-        <m id="Older PRs">0</m>
-      </metrics>
-    </repository>
     <repository id="yegor256/telepost">
       <metrics>
         <m id="CI failures">0</m>
@@ -1572,17 +1495,6 @@
         <m id="Older PRs">0</m>
       </metrics>
     </repository>
-    <repository id="yegor256/verbatim-bnf">
-      <metrics>
-        <m id="CI failures">0</m>
-        <m id="Open Issues">0</m>
-        <m id="Old Issues">0</m>
-        <m id="Older Issues">0</m>
-        <m id="Open PRs">0</m>
-        <m id="Old PRs">0</m>
-        <m id="Older PRs">0</m>
-      </metrics>
-    </repository>
     <repository id="yegor256/vm">
       <metrics>
         <m id="CI failures">0</m>
@@ -1592,17 +1504,6 @@
         <m id="Open PRs">0</m>
         <m id="Old PRs">0</m>
         <m id="Older PRs">0</m>
-      </metrics>
-    </repository>
-    <repository id="yegor256/vmeste-ghost-theme">
-      <metrics>
-        <m id="CI failures">0</m>
-        <m id="Open Issues">1</m>
-        <m id="Old Issues" alert="yes">1</m>
-        <m id="Older Issues" alert="yes">1</m>
-        <m id="Open PRs">1</m>
-        <m id="Old PRs" alert="yes">1</m>
-        <m id="Older PRs" alert="yes">1</m>
       </metrics>
     </repository>
     <repository id="yegor256/volatility">
@@ -1726,17 +1627,6 @@
         <m id="Older PRs">0</m>
       </metrics>
     </repository>
-    <repository id="yegor256/yum-utils">
-      <metrics>
-        <m id="CI failures">0</m>
-        <m id="Open Issues">0</m>
-        <m id="Old Issues">0</m>
-        <m id="Older Issues">0</m>
-        <m id="Open PRs">1</m>
-        <m id="Old PRs" alert="yes">1</m>
-        <m id="Older PRs" alert="yes">1</m>
-      </metrics>
-    </repository>
     <repository id="yegor256/zache">
       <metrics>
         <m id="CI failures">0</m>
@@ -1783,11 +1673,11 @@
     </repository>
     <repository id="objectionary/eo">
       <metrics>
-        <m id="CI failures" alert="yes">2</m>
+        <m id="CI failures" alert="yes">1</m>
         <m id="Open Issues">55</m>
-        <m id="Old Issues" alert="yes">42</m>
+        <m id="Old Issues" alert="yes">41</m>
         <m id="Older Issues" alert="yes">31</m>
-        <m id="Open PRs">19</m>
+        <m id="Open PRs">16</m>
         <m id="Old PRs" alert="yes">13</m>
         <m id="Older PRs" alert="yes">9</m>
       </metrics>
@@ -1908,7 +1798,7 @@
         <m id="Open Issues">4</m>
         <m id="Old Issues" alert="yes">4</m>
         <m id="Older Issues" alert="yes">4</m>
-        <m id="Open PRs">0</m>
+        <m id="Open PRs">1</m>
         <m id="Old PRs">0</m>
         <m id="Older PRs">0</m>
       </metrics>
@@ -2007,7 +1897,7 @@
         <m id="Open Issues">3</m>
         <m id="Old Issues" alert="yes">2</m>
         <m id="Older Issues" alert="yes">2</m>
-        <m id="Open PRs">5</m>
+        <m id="Open PRs">6</m>
         <m id="Old PRs" alert="yes">4</m>
         <m id="Older PRs" alert="yes">4</m>
       </metrics>
