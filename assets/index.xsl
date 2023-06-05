@@ -142,6 +142,24 @@ SOFTWARE.
               <xsl:value-of select="fief/@time"/>
               <xsl:text>. </xsl:text>
               <br/>
+              <xsl:text>It took </xsl:text>
+              <xsl:variable name="sec" select="round(fief/@msec) div 1000"/>
+              <xsl:choose>
+                <xsl:when test="$sec &lt; 60">
+                  <xsl:value-of select="$sec"/>
+                  <xsl:text>s</xsl:text>
+                </xsl:when>
+                <xsl:when test="$sec &lt; 3600">
+                  <xsl:value-of select="format-number($sec div 60, '#.##')"/>
+                  <xsl:text>min</xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="format-number($sec div 3600, '#.#')"/>
+                  <xsl:text>h</xsl:text>
+                </xsl:otherwise>
+              </xsl:choose>
+              <xsl:text> to build the report.</xsl:text>
+              <br/>
               <xsl:text>The XML with the data </xsl:text>
               <a href="index.xml">
                 <xsl:text>is here</xsl:text>

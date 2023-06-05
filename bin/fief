@@ -75,6 +75,7 @@ Encoding.default_external = Encoding::UTF_8
 Encoding.default_internal = Encoding::UTF_8
 
 def build_xml(opts, loog)
+  start = Time.now
   if opts.token?
     api = Octokit::Client.new(:access_token => opts[:token])
   else
@@ -111,7 +112,7 @@ def build_xml(opts, loog)
     end
   end
   builder = Nokogiri::XML::Builder.new(:encoding => 'UTF-8') do |xml|
-    xml.fief(time: Time.now) do
+    xml.fief(time: Time.now, msec: Time.now - start) do
       xml.titles do
         data.map { |r| r[:metrics].map { |ms| ms[:title] } }.flatten.uniq.each do |t|
           xml.title do
