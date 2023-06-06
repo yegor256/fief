@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fief time="2023-06-06 02:11:53 +0000" sec="6082.857715505">
+<fief time="2023-06-06 05:51:45 +0000" sec="5638.122042898">
   <titles>
     <title>CI failures</title>
     <title>Open Issues</title>
@@ -115,7 +115,7 @@
         <m id="Open Issues">5</m>
         <m id="Old Issues" alert="yes">5</m>
         <m id="Older Issues" alert="yes">5</m>
-        <m id="Open PRs">4</m>
+        <m id="Open PRs">3</m>
         <m id="Old PRs">1</m>
         <m id="Older PRs">0</m>
       </metrics>
@@ -2190,7 +2190,7 @@
     </repository>
     <repository id="polystat/c2eo">
       <metrics>
-        <m id="CI failures" alert="yes">1</m>
+        <m id="CI failures">0</m>
         <m id="Open Issues">22</m>
         <m id="Old Issues" alert="yes">22</m>
         <m id="Older Issues" alert="yes">22</m>
