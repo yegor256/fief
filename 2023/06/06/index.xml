@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<fief time="2023-06-06 05:51:45 +0000" sec="5638.122042898">
+<fief time="2023-06-06 10:02:01 +0000" sec="6234.578073383">
   <titles>
     <title>CI failures</title>
     <title>Open Issues</title>
@@ -1677,7 +1677,7 @@
         <m id="Open Issues">54</m>
         <m id="Old Issues" alert="yes">40</m>
         <m id="Older Issues" alert="yes">31</m>
-        <m id="Open PRs">16</m>
+        <m id="Open PRs">17</m>
         <m id="Old PRs" alert="yes">13</m>
         <m id="Older PRs" alert="yes">9</m>
       </metrics>
@@ -1798,7 +1798,7 @@
         <m id="Open Issues">4</m>
         <m id="Old Issues" alert="yes">4</m>
         <m id="Older Issues" alert="yes">4</m>
-        <m id="Open PRs">1</m>
+        <m id="Open PRs">0</m>
         <m id="Old PRs">0</m>
         <m id="Older PRs">0</m>
       </metrics>
