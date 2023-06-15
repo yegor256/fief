@@ -2,7 +2,7 @@
 name: cron
 on:
   schedule:
-    - cron: "13 4 * * 3"
+    - cron: "13 4 * * 1,3,5"
 concurrency:
   group: cron
   cancel-in-progress: true
@@ -16,7 +16,7 @@ jobs:
           ruby-version: 2.7
       - run: bundle install
       - run: |
-          bin/fief --token ${{ secrets.TOKEN }} --delay 1000 \
+          bin/fief --token ${{ secrets.TOKEN }} --delay 1500 \
             --include jcabi/* \
             --include yegor256/* \
             --include sttc/* \
