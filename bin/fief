@@ -116,6 +116,7 @@ def build_xml(opts, loog)
       loog.info("Read from '#{name}': #{measures.map { |m| "#{m[:title]}=#{m[:value]}" }.join(', ')}")
     end
   end
+  p data
   builder = Nokogiri::XML::Builder.new(:encoding => 'UTF-8') do |xml|
     xml.fief(time: Time.now, sec: Time.now - start) do
       xml.titles do

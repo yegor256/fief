@@ -110,7 +110,15 @@ SOFTWARE.
               </thead>
               <xsl:apply-templates select="fief/repositories"/>
               <tfoot>
-                <!-- nothing yet -->
+                <tr>
+                  <td>Total:</td>
+                  <xsl:for-each select="fief/titles/title">
+                    <xsl:variable name="title" select="."/>
+                    <td class="num">
+                      <xsl:value-of select="sum(//m[@id=$title])"/>
+                    </td>
+                  </xsl:for-each>
+                </tr>
               </tfoot>
             </table>
           </article>
