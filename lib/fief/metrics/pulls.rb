@@ -38,31 +38,44 @@ class Fief::Pulls
     json.each do |pr|
       num = pr[:number]
       data = @api.pull_request(@repo, num)
-      if data[:created_at] < Time.now - (60 * 60 * 24 * 28)
+      if data[:created_at] < Time.now - (60 * 60 * 24 * old_days)
         loog.debug("PR #{@repo}/##{num} is old")
         old += 1
       end
-      if data[:created_at] < Time.now - (60 * 60 * 24 * 112)
+      if data[:created_at] < Time.now - (60 * 60 * 24 * older_days)
         loog.debug("PR #{@repo}/##{num} is very old")
         older += 1
       end
     end
     [
       {
-        title: 'Open PRs',
+        title: 'Pulls',
         value: total,
-        alert: false
+        alert: false,
+        legend: 'currently open pull requests'
       },
       {
-        title: 'Old PRs',
+        title: 'Pulls+',
         value: old,
-        alert: older > total * 0.4
+        alert: older > total * 0.4,
+        legend: "pull requests open for more than #{old_days} days"
       },
       {
-        title: 'Older PRs',
+        title: 'Pulls++',
         value: older,
-        alert: older > total * 0.2
+        alert: older > total * 0.2,
+        legend: "pull requests open for more than #{older_days} days"
       }
     ]
+  end
+
+  private
+
+  def old_days
+    28
+  end
+
+  def older_days
+    112
   end
 end

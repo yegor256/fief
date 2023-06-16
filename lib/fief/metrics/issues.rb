@@ -39,31 +39,44 @@ class Fief::Issues
     json.each do |issue|
       num = issue[:number]
       data = @api.issue(@repo, num)
-      if data[:created_at] < Time.now - (60 * 60 * 24 * 28)
+      if data[:created_at] < Time.now - (60 * 60 * 24 * old_days)
         loog.debug("Issue #{@repo}/##{num} is old")
         old += 1
       end
-      if data[:created_at] < Time.now - (60 * 60 * 24 * 112)
+      if data[:created_at] < Time.now - (60 * 60 * 24 * older_days)
         loog.debug("Issue #{@repo}/##{num} is very old")
         older += 1
       end
     end
     [
       {
-        title: 'Open Issues',
+        title: 'Issues',
         value: total,
-        alert: false
+        alert: false,
+        legend: 'сurrently unresolved issues'
       },
       {
-        title: 'Old Issues',
+        title: 'Issues+',
         value: old,
-        alert: older > total * 0.4
+        alert: older > total * 0.4,
+        legend: "issues unresolved for more than #{old_days} days"
       },
       {
-        title: 'Older Issues',
+        title: 'Issues++',
         value: older,
-        alert: older > total * 0.4
+        alert: older > total * 0.4,
+        legend: "issues unresolved for more than #{older_days} days"
       }
     ]
+  end
+
+  private
+
+  def old_days
+    28
+  end
+
+  def older_days
+    112
   end
 end

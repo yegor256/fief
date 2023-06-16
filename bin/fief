@@ -57,7 +57,7 @@ opts = Slop.parse(args, strict: true, help: true) do |o|
   o.array '--exclude', 'Mask of GitHub repo to exclude'
 end
 
-if opts.help? || opts[:include].empty?
+if opts.help?
   puts opts
   exit
 end
@@ -89,6 +89,7 @@ def build_xml(opts, loog)
     repos = Fief::Repos.new(opts, api, loog).all
   end
   data = []
+  legend = {}
   repos.each do |repo|
     Dir[File.join(__dir__, '../lib/fief/metrics/*.rb')].each do |f|
       name = File::basename(f).split('.')[0]
@@ -101,9 +102,12 @@ def build_xml(opts, loog)
       require_relative f
       m = type.split('::').reduce(Module, :const_get).new(api, repo, opts)
       if opts.dry?
-        measures = [{ title: 'Open Pull Requests', value: 42 }, { title: 'Open Issues', value: 42 }]
+        measures = [{ title: 'Pulls+', value: 42, legend: 'Open pulls' }, { title: 'Issues', value: 42 }]
       else
         measures = m.take(loog)
+      end
+      measures.each do |m|
+        legend[m[:title]] = m[:legend]
       end
       if data.find { |d| d[:name] == repo }.nil?
         data << {name: repo, metrics: []}
@@ -118,6 +122,13 @@ def build_xml(opts, loog)
         data.map { |r| r[:metrics].map { |ms| ms[:title] } }.flatten.uniq.each do |t|
           xml.title do
             xml.text t
+          end
+        end
+      end
+      xml.legend do
+        legend.each do |t, text|
+          xml.column(title: t) do
+            xml.text text
           end
         end
       end
@@ -142,6 +153,7 @@ def build_xml(opts, loog)
   xml
 end
 begin
+  raise 'At least one --include is required' if opts[:include].empty?
   home = File.absolute_path(opts[:to])
   loog.debug("All files generated will be saved to #{home}")
   if File.exist?(home)
