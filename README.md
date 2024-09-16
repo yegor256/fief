@@ -22,7 +22,7 @@ $ gem install fief
 Then, run it locally and read its output:
 
 ```bash
-$ fief --repo yegor256/fief --verbose
+$ fief --include yegor256/fief --verbose
 ```
 
 For example, [here is mine](https://yegor256.github.io/fief/).
