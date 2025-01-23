@@ -1,6 +1,6 @@
 ---
 name: cron
-on:
+'on':
   schedule:
     - cron: "13 4 * * 1,3,5"
 concurrency:
