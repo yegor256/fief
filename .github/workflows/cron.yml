@@ -15,6 +15,7 @@ jobs:
         with:
           ruby-version: 3.3
           bundler-cache: true
+      - run: bundle config set --global path "$(pwd)/vendor/bundle"
       - run: bundle install
       - run: |
           bin/fief --token ${{ secrets.TOKEN }} --delay 1500 \
