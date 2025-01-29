@@ -14,6 +14,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.3
+          bundler-cache: true
       - run: bundle install
       - run: |
           bin/fief --token ${{ secrets.TOKEN }} --delay 1500 \
