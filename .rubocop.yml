@@ -23,7 +23,7 @@ Style/ClassAndModuleChildren:
   Enabled: false
 Metrics/BlockLength:
   Max: 30
-required:
+require:
   - rubocop-rake
   - rubocop-minitest
   - rubocop-performance
