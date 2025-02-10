@@ -38,7 +38,7 @@ jobs:
           ruby-version: 3.3
           bundler-cache: true
       - run: bundle config set --global path "$(pwd)/vendor/bundle"
-      - run: bundle install
+      - run: bundle install --no-color
       - run: |
           bin/fief --token ${{ secrets.TOKEN }} --delay 1500 \
             --include jcabi/* \
