@@ -38,7 +38,7 @@ jobs:
             --to gh-pages
       - run: mkdir -p gh-pages/$(date +'%Y/%m/%d')
       - run: cp gh-pages/index.xml gh-pages/$(date +'%Y/%m/%d')/index.xml
-      - uses: JamesIves/github-pages-deploy-action@v4.7.2
+      - uses: JamesIves/github-pages-deploy-action@v4.7.3
         with:
           branch: gh-pages
           folder: gh-pages
