@@ -1,5 +1,5 @@
 # (The MIT License)
-# 
+#
 # SPDX-FileCopyrightText: Copyright (c) 2023 Yegor Bugayenko
 # SPDX-License-Identifier: MIT
 Feature: Simple Reporting
