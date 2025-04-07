@@ -1,12 +1,12 @@
 <img alt="fief logo" src="/logo.svg" width="64px"/>
 
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
-[![DevOps By Rultor.com](http://www.rultor.com/b/yegor256/fief)](http://www.rultor.com/p/yegor256/fief)
+[![DevOps By Rultor.com](https://www.rultor.com/b/yegor256/fief)](https://www.rultor.com/p/yegor256/fief)
 [![We recommend RubyMine](https://www.elegantobjects.org/rubymine.svg)](https://www.jetbrains.com/ruby/)
 
 [![rake](https://github.com/yegor256/fief/actions/workflows/rake.yml/badge.svg)](https://github.com/yegor256/fief/actions/workflows/rake.yml)
-[![PDD status](http://www.0pdd.com/svg?name=yegor256/fief)](http://www.0pdd.com/p?name=yegor256/fief)
-[![Gem Version](https://badge.fury.io/rb/fief.svg)](http://badge.fury.io/rb/fief)
+[![PDD status](https://www.0pdd.com/svg?name=yegor256/fief)](https://www.0pdd.com/p?name=yegor256/fief)
+[![Gem Version](https://badge.fury.io/rb/fief.svg)](https://badge.fury.io/rb/fief)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/yegor256/fief/blob/master/LICENSE.txt)
 [![Maintainability](https://api.codeclimate.com/v1/badges/396ec0584e0a84adc723/maintainability)](https://codeclimate.com/github/yegor256/fief/maintainability)
 [![Hits-of-Code](https://hitsofcode.com/github/yegor256/fief)](https://hitsofcode.com/view/github/yegor256/fief)
