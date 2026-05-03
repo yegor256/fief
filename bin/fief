@@ -77,7 +77,7 @@ def build_xml(opts, loog)
     Dir[File.join(__dir__, '../lib/fief/metrics/*.rb')].each do |f|
       name = File::basename(f).split('.')[0]
       if !opts[:metrics].empty? && !opts[:metrics].include?(name)
-        loog.info("Ignoring #{user}/#{name} due to --metrics")
+        loog.info("Ignoring #{repo}/#{name} due to --metrics")
         next
       end
       type = "Fief::#{name.capitalize}"

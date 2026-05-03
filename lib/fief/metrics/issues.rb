@@ -36,7 +36,7 @@ class Fief::Issues
         title: 'Issues',
         value: total,
         alert: false,
-        legend: 'сurrently unresolved issues'
+        legend: 'currently unresolved issues'
       },
       {
         title: 'Issues+',
