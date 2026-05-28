@@ -1,9 +1,9 @@
+require 'loog'
 # SPDX-FileCopyrightText: Copyright (c) 2023 Yegor Bugayenko
 # SPDX-License-Identifier: MIT
 
 require 'minitest/autorun'
 require 'octokit'
-require 'loog'
 require_relative '../../lib/fief/metrics/issues'
 
 # Test for Issues.
@@ -12,12 +12,9 @@ require_relative '../../lib/fief/metrics/issues'
 # License:: MIT
 class TestIssues < Minitest::Test
   def test_real
-    api = Octokit::Client.new
-    m = Fief::Issues.new(api, 'yegor256/fief', {})
-    ms = m.take(Loog::VERBOSE)
-    assert !ms.empty?
+    refute_empty(Fief::Issues.new(Octokit::Client.new, 'yegor256/fief', {}).take(Loog::VERBOSE))
   rescue Octokit::TooManyRequests => e
-    puts e.message
-    skip
+    puts(e.message)
+    skip('GitHub API rate limit exceeded')
   end
 end

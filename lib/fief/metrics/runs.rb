@@ -13,8 +13,7 @@ class Fief::Runs
   end
 
   def take(loog)
-    master = @api.repository(@repo)[:default_branch]
-    json = @api.repository_workflow_runs(@repo, branch: master)
+    json = @api.repository_workflow_runs(@repo, branch: @api.repository(@repo)[:default_branch])
     workflows = []
     failures = 0
     json[:workflow_runs].take(32).each do |run|

@@ -26,7 +26,12 @@ Style/ClassAndModuleChildren:
   Enabled: false
 Metrics/BlockLength:
   Max: 30
-require:
+Elegant/GoodMethodName:
+  AllowedNames:
+    - old_days
+    - older_days
+plugins:
   - rubocop-rake
   - rubocop-minitest
   - rubocop-performance
+  - rubocop-elegant
