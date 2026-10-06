@@ -22,7 +22,7 @@ jobs:
       - run: bundle config set --global path "$(pwd)/vendor/bundle"
       - run: bundle install --no-color
       - run: |
-          bin/fief --token ${{ secrets.TOKEN }} --delay 1500 \
+          bundle exec bin/fief --token ${{ secrets.TOKEN }} --delay 1500 \
             --include jcabi/* \
             --include yegor256/* \
             --include sttc/* \
