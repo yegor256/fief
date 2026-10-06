@@ -1,4 +1,6 @@
-<img alt="fief logo" src="/logo.svg" width="64px"/>
+# Statistics About GitHub Repositories
+
+![fief logo](logo.svg)
 
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![DevOps By Rultor.com](https://www.rultor.com/b/yegor256/fief)](https://www.rultor.com/p/yegor256/fief)
@@ -15,13 +17,13 @@ This simple script will help you collect statistics about your
 GitHub repositories and generate a simple HTML report. First, install it:
 
 ```bash
-$ gem install fief
+gem install fief
 ```
 
 Then, run it locally and read its output:
 
 ```bash
-$ fief --repo yegor256/fief --verbose
+fief --repo yegor256/fief --verbose
 ```
 
 For example, [here is mine](https://yegor256.github.io/fief/).
@@ -30,12 +32,13 @@ For example, [here is mine](https://yegor256.github.io/fief/).
 
 Read [these guidelines](https://www.yegor256.com/2014/04/15/github-guidelines.html).
 Make sure your build is green before you contribute
-your pull request. You will need to have [Ruby](https://www.ruby-lang.org/en/) 2.3+ and
+your pull request. You will need to have
+[Ruby](https://www.ruby-lang.org/en/) 2.3+ and
 [Bundler](https://bundler.io/) installed. Then:
 
-```
-$ bundle update
-$ bundle exec rake
+```bash
+bundle update
+bundle exec rake
 ```
 
 If it's clean and you don't see any error messages, submit your pull request.
